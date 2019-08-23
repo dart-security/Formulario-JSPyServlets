@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dart - Security || Seguridad informatica</title>
+        <link rel="stylesheet" type="text/css" href="Recursos/styles.css">
+        <script type="text/javascript" src="Recursos/funciones.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Registrate en nuestro formulario</h1>
+        <form name="form1" action="/ManejoFormulario/Procesamiento" 
+              method="post" onsubmit="return validarForma(this);">
+            
+            <input type="hidden" name="oculto" value="ValorOculto">
+            
+            <table width="200" id="one-colum-emphasis">
+                <caption>
+                    formulario de Registro de Datos
+                </caption>
+                <tr>
+                    <td class="oce-first">
+                        Usuario (*)
+                    </td>
+                    <td>
+                        <input class="default" type="text" 
+                               name="usuario" value="Escribir Usuario">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Email (*)
+                    </td>
+                    <td>
+                        <input class="default" type="text" 
+                               name="email" value="Escribir Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Password (*)
+                    </td>
+                    <td>
+                        <input class="default" type="password" 
+                               name="password" onfocus="this.select();">
+                    </td>
+                </tr>
+                                <tr>
+                    <td class="oce-first">
+                        Tecnolog&iacute;as de Inter&eacute;s: (*)
+                    </td>
+                    <td>
+                        Java <input type="checkbox" name="tecnologia" value="java">
+                        &nbsp;&nbsp;&nbsp;
+                        Python <input type="checkbox" name="tecnologia" value="puthon">
+                        &nbsp;&nbsp;&nbsp;
+                        .Net <input type="checkbox" name="tecnologia" value="net">
+                        &nbsp;&nbsp;&nbsp;
+                        Php <input type="checkbox" name="tecnologia" value="php">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ocefirst">
+                        G&eacute;nero: (*)
+                    </td>
+                    <td>
+                        Hombre <input type="radio" name="genero" value="H">
+                        &nbsp;&nbsp;&nbsp;<!-- genera espacios estre los elemntos -->
+                        Mujer <input type="radio" name="genero" value="M">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Ocupaci&oacute;nes: (*)
+                    </td>
+                    <td>
+                        <select name="ocupacion" class="default">
+                            <option value="">Seleccionar</option>
+                            <option value="1">Profesor</option>
+                            <option value="2">Alumno</option>
+                            <option value="3">Jubilado</option>
+                            <option value="4">Otro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        M&uacute;sica Favorita:
+                    </td> 
+                    <td>
+                        <select name="musica" multiple class="dafault">
+                            <option value="electronica">Electronica</option>
+                            <option value="salsa">Salsa</option>
+                            <option value="pop">Pop</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Comentarios:
+                    <td>
+                    <td>
+                        <textarea name="comentario" cols="30" rows="2"
+                                  class="default" onfocus="this.select();">
+                            Escribe un Texto
+                        </textarea>
+                    </td>
+                </tr>
+                <tr style="text-aling:center;">
+                    <td>
+                        <input type="reset" value="Limpiar" class="default">
+                    </td>
+                    <td>
+                        <input type="submit" value="Enviar" class="default">
+                    </td>
+                </tr>
+            </table>
+            
+        </form>
+    </body>
+    
+    
+    
+</html>
